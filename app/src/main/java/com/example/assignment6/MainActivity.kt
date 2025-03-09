@@ -1,3 +1,8 @@
+/* Assignment 6
+   MainActivity.kt
+   Nils Streedain | streedan@oregonstate.com
+   CS 492 | Oregon State University
+*/
 package com.example.assignment6
 
 import android.os.Bundle
@@ -7,10 +12,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.assignment6.ui.AppNavHost
 import com.example.assignment6.ui.theme.Assignment6Theme
 
 class MainActivity : ComponentActivity() {
@@ -20,28 +25,17 @@ class MainActivity : ComponentActivity() {
         setContent {
             Assignment6Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    AppNavHost(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun MainActivityPreview() {
     Assignment6Theme {
-        Greeting("Android")
+        AppNavHost()
     }
 }
