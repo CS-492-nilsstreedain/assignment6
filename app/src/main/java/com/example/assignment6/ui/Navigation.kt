@@ -73,9 +73,10 @@ fun StartScreen(nc: NavController, vm: Hunt) {
         Text("Treasure Hunt", style = MaterialTheme.typography.headlineMedium)
         Spacer(Modifier.height(16.dp))
         Text("Rules:\n" +
-                "1. Follow clues.\n" +
-                "2. Verify GPS.\n" +
-                "3. Press 'Found It!'"
+                "1. Tap Start to begin your treasure hunt.\n" +
+                "2. Read each clue and travel to the location it describes.\n" +
+                "3. Press Found It! when you think you’re in the right spot.\n" +
+                "4. Solve all clues to finish the hunt and see your total time."
         )
         Spacer(Modifier.height(16.dp))
         Button(onClick = {
