@@ -145,7 +145,7 @@ fun CompletedScreen(nc: NavController, clue: Clue, time: Long) {
         Text("Treasure Hunt Completed!")
         Text("Total Time: ${time}s")
         Spacer(Modifier.height(16.dp))
-        Text("${clue.description}")
+        Text(clue.description)
         Spacer(Modifier.height(16.dp))
         Button({ nc.navigate("start"){ popUpTo("completed"){ inclusive=true } } }) { Text("Home") }
     }
