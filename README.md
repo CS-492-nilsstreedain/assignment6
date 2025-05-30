@@ -1,4 +1,4 @@
-# Assignment 6
+# Assignment 6: Mobile Treasure Hunt
 ## Introduction
 Successfully create an Android project in Android Studio that utilizes Jetpack Compose and Kotlin to create an app that let's the user search for treasure in the real world. This is Geocaching Links to an external site. combined with a Treasure Hunt.
 
